@@ -2,7 +2,7 @@
   "name": "typeshirts",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/RecursiveFR/skullcap-theme.git",
+  "repository": "https://github.com/sixtineio/typeshirts-shopify-theme.git",
   "author": "[SIXTINE] Michel-Ange Masdongar <michel-ange@sixtine.io>",
   "license": "MIT",
   "scripts": {
