@@ -1,0 +1,119 @@
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "text-with-icons": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-lock",
+            "custom_icon_width": 50,
+            "title": "Paiement sécurisé SSL",
+            "content": "<p>Commandez en toute sécurité<\/p>"
+          }
+        },
+        "item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "custom_icon_width": 50,
+            "title": "Livraison express",
+            "content": "<p>Vos produits sont expédiés sous 48h<\/p>"
+          }
+        },
+        "item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-phone",
+            "custom_icon_width": 50,
+            "title": "Satisfait ou remboursé",
+            "content": "<p>14 jours pour changer d'avis<\/p>"
+          }
+        },
+        "item-4": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-email",
+            "custom_icon_width": 50,
+            "title": "Contactez-nous",
+            "content": "<p>Support client par chat et e-mail du lundi au vendredi de 9h à 18h<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "item-3",
+        "item-1",
+        "item-2",
+        "item-4"
+      ],
+      "settings": {
+        "background": "#051d38",
+        "text_color": "#ffffff"
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "settings": {
+        "reveal_on_scroll": true,
+        "image": "shopify:\/\/shop_images\/newsletter-background.webp",
+        "subheading": "Abonnez-vous à notre newsletter",
+        "content": "<p>Gagnez 10% à l'inscription et bénéficiez de nos offres exclusives ! Votre code sera disponible dans le mail de confirmation.<\/p>",
+        "text_position": "left",
+        "text_alignment": "left",
+        "text_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "links": {
+          "type": "links",
+          "settings": {
+            "menu": "footer-menu-collections"
+          }
+        },
+        "links_9QDbVj": {
+          "type": "links",
+          "settings": {
+            "menu": "footer-menu-info"
+          }
+        },
+        "links_ec3XxC": {
+          "type": "links",
+          "settings": {
+            "menu": "informations"
+          }
+        },
+        "social_media": {
+          "type": "social_media",
+          "settings": {
+            "title": "Suivez-nous",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "links",
+        "links_9QDbVj",
+        "links_ec3XxC",
+        "social_media"
+      ],
+      "settings": {
+        "show_payment_icons": true,
+        "enable_follow_on_shop": true,
+        "show_country_selector": false,
+        "show_locale_selector": true
+      }
+    }
+  },
+  "order": [
+    "text-with-icons",
+    "newsletter",
+    "footer"
+  ]
+}

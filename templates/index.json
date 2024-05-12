@@ -1,0 +1,314 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bonnet-marin.webp",
+            "text_position": "middle_center",
+            "subheading": "Nouveau site internet",
+            "title": "Skullcap change de peau !",
+            "button_1_text": "Découvrez le catalogue",
+            "button_1_link": "\/collections\/all",
+            "button_2_text": "",
+            "button_2_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 25
+          }
+        }
+      },
+      "block_order": [
+        "slide-1"
+      ],
+      "settings": {
+        "section_height": "fit",
+        "transition_type": "sweep",
+        "autoplay": true,
+        "cycle_speed": 5,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "featured_product_RKfFyy": {
+      "type": "featured-product",
+      "blocks": {
+        "variant_picker_9nqXng": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_mode": "dropdown",
+            "color_mode": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_gAFx98": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons_YPNgrj": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": false,
+            "atc_button_background": "rgba(0,0,0,0)",
+            "atc_button_text_color": "rgba(0,0,0,0)",
+            "buy_now_button_background": "rgba(0,0,0,0)",
+            "buy_now_button_text_color": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker_9nqXng",
+        "quantity_selector_gAFx98",
+        "buy_buttons_YPNgrj"
+      ],
+      "settings": {
+        "product": "bonnet-marin-docker-court-homme-femme-rotterdam",
+        "subheading": "tout le monde les adorent",
+        "title": "Nos best-sellers",
+        "show_vendor": true,
+        "show_sku": false,
+        "show_taxes_included": false,
+        "show_product_rating": false,
+        "show_share_buttons": false,
+        "help_page": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "show_thumbnails_on_mobile": false,
+        "desktop_thumbnails_position": "left",
+        "transition_effect": "slide",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "featured_collections_pdX8xT": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_AB6b43": {
+          "type": "collection",
+          "settings": {
+            "collection": "casquettes-sans-visiere-bonnets-breton-miki-docker",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_AB6b43"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "products_count": 8,
+        "products_per_row": 4,
+        "stack_products": true,
+        "show_cta": true,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "collection_list_k9ryQK": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_mq8BmN": {
+          "type": "collection",
+          "settings": {
+            "collection": "bonnets-marins-docker-homme-femme",
+            "image": "shopify:\/\/shop_images\/bonnet-marin-docker.webp",
+            "subheading": "",
+            "title": "Bonnets marins",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#051e38",
+            "overlay_opacity": 0
+          }
+        },
+        "collection_BAJQHf": {
+          "type": "collection",
+          "settings": {
+            "collection": "casquettes-sans-visiere-bonnets-breton-miki-docker",
+            "image": "shopify:\/\/shop_images\/casquette-sans-visiere.webp",
+            "subheading": "",
+            "title": "Casquettes sans visière",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_9yDxJ4": {
+          "type": "collection",
+          "settings": {
+            "collection": "marinieres",
+            "image": "shopify:\/\/shop_images\/marinieres-skullcap.webp",
+            "subheading": "",
+            "title": "Marinières",
+            "link_text": "",
+            "link_url": "",
+            "text_color": "rgba(0,0,0,0)",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_mq8BmN",
+        "collection_BAJQHf",
+        "collection_9yDxJ4"
+      ],
+      "settings": {
+        "reveal_on_scroll": false,
+        "layout": "carousel",
+        "subheading": "",
+        "title": "Nos collections",
+        "background": "#051e38",
+        "text_color": "#ffffff"
+      }
+    },
+    "testimonials_QjQRBj": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_CNWagp": {
+          "type": "testimonial",
+          "settings": {
+            "content": "Commande simple et envoi rapide. Bonnet marin correspondant au descriptif, très chaud et de bonne qualité (fabrication française). Je recommande sans hésiter.",
+            "author": "Manu54"
+          }
+        },
+        "testimonial_QiVAVA": {
+          "type": "testimonial",
+          "settings": {
+            "content": "Ravi du Docker, de sa qualité et de la rapidité d’envoie",
+            "author": "Simon B."
+          }
+        },
+        "testimonial_U4Rd9e": {
+          "type": "testimonial",
+          "settings": {
+            "content": "Cette option du colis 3 pièces devrait être étendue à d'autres articles de la boutique, comme les casquettes sans visière, ça marcherait d'enfer..!!!",
+            "author": "Jean-Jacques L."
+          }
+        },
+        "testimonial_CcQjLc": {
+          "type": "testimonial",
+          "settings": {
+            "content": "J'ai fait une erreur de saisie du code postal. Il s'agit de 30100 Alès et non de 30300 Alès. Merci",
+            "author": "Jerome A."
+          }
+        },
+        "testimonial_WnXCbz": {
+          "type": "testimonial",
+          "settings": {
+            "content": "Super produit et super service. Attention, d'une livraison à l'autre, la couleur des bonnets peut varier légèrement ...",
+            "author": "Laurent B."
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_CNWagp",
+        "testimonial_QiVAVA",
+        "testimonial_U4Rd9e",
+        "testimonial_CcQjLc",
+        "testimonial_WnXCbz"
+      ],
+      "settings": {
+        "reveal_on_scroll": true,
+        "subheading": "",
+        "title": "Les avis de nos clients",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "video_zUm3Er": {
+      "type": "video",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "video": "shopify:\/\/files\/videos\/sailboat.mp4",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "background_type": "full_width",
+        "video_size": "small",
+        "autoplay": true,
+        "show_video_controls": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
+    "faq_WJmhGU": {
+      "type": "faq",
+      "blocks": {
+        "question_zC4CxC": {
+          "type": "question",
+          "settings": {
+            "title": "La livraison chez Skullcap-Shop est-elle payante ?",
+            "answer": "<p><span style=\"text-decoration:underline\"><strong>Pour la France métropolitaine et Corse :<\/strong><\/span><\/p><p><strong>Tarif : 5€<br\/>Les frais de livraison vous sont offerts<\/strong> pour toute commande à partir de <strong>50€<\/strong><\/p><p><span style=\"text-decoration:underline\"><strong>Pour les autres destinations :<\/strong><\/span><\/p><p>veuillez nous contacter via la bulle de contact en bas à droite de votre écran ou via le formulaire de contact.<\/p>"
+          }
+        },
+        "question_MqLryP": {
+          "type": "question",
+          "settings": {
+            "title": "Sous combien de temps puis-je être livré ?",
+            "answer": "<p>Nos délais de livraison varient entre 2 à 5 jours ouvrés<strong>.<\/strong><\/p><p>Vous serez averti par e-mail de l'avancée de votre colis.<\/p>"
+          }
+        },
+        "question_UJTpd3": {
+          "type": "question",
+          "settings": {
+            "title": "Quels sont les moyens de paiements acceptés sur Skullcap-Shop ?",
+            "answer": "<p>Tout paiement sur Skullcap-Shop s'effectue par <strong>Carte Bancaire<\/strong> (CB, MasterCard, VISA...).<\/p><p>Avec votre Carte Bancaire, la transaction s'effectue directement sur le site Skullcap-Shop, elle est 100% sécurisée SSL étant donné que ce système de paiement est géré par la plateforme Stripe.<\/p><p>Le paiement est rapide et entièrement sécurisé sur Skullcap-Shop.<\/p>"
+          }
+        },
+        "question_4r7hrh": {
+          "type": "question",
+          "settings": {
+            "title": "J'ai oublié mon mot de passe… Que faire ?",
+            "answer": "<p>Si vous avez oublié votre mot de passe, veuillez rendez-vous sur la page Mon compte et cliquez sur le lien mot de passe oublié. En remplissant le formulaire, vous aurez ensuite un lien vous permettant de réinitialiser le mot de passe.<\/p>"
+          }
+        },
+        "question_VNTd6x": {
+          "type": "question",
+          "settings": {
+            "title": "J'ai une question",
+            "answer": "<p>Si vous avez la moindre question, n'hésitez pas à nous la poser, via la bulle de chat directement en bas à droite du site.<\/p><p>Vous pouvez également nous envoyer un message via le formulaire de contact, nous vous répondrons dans la journée ! <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_zC4CxC",
+        "question_MqLryP",
+        "question_UJTpd3",
+        "question_4r7hrh",
+        "question_VNTd6x"
+      ],
+      "settings": {
+        "show_navigation": false,
+        "title": "FAQ",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "featured_product_RKfFyy",
+    "featured_collections_pdX8xT",
+    "collection_list_k9ryQK",
+    "testimonials_QjQRBj",
+    "video_zUm3Er",
+    "faq_WJmhGU"
+  ]
+}

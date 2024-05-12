@@ -1,0 +1,20 @@
+{
+  "name": "typeshirts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/RecursiveFR/skullcap-theme.git",
+  "author": "[SIXTINE] Michel-Ange Masdongar <michel-ange@sixtine.io>",
+  "license": "MIT",
+  "scripts": {
+    "tw": "npx tailwindcss -i ./tailwind.css -o ./assets/tailwind.css --watch",
+    "dev": "shopify theme dev --password shptka_a2923a5f56c344cbd076189927e7bda0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@shopify/cli": "^3.60.1",
+    "@shopify/prettier-plugin-liquid": "^1.5.0",
+    "@shopify/theme": "^3.58.2",
+    "prettier": "^3.2.5",
+    "tailwindcss": "^3.4.3"
+  }
+}

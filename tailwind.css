@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.collection-description,
+.page-content {
+  @apply py-[60px] max-w-[1024px] mx-auto;
+
+  h2,
+  h3 {
+    @apply font-bold mb-[20px];
+  }
+  h2 {
+    @apply text-[24px];
+  }
+  h3 {
+    @apply text-[20px];
+  }
+  p,
+  ul,
+  ol {
+    @apply mb-[10px];
+  }
+  ul,
+  ol {
+    @apply pl-[14px];
+  }
+  ul {
+    li {
+      @apply list-disc;
+    }
+  }
+  ol {
+    li {
+      @apply list-decimal;
+    }
+  }
+
+  a {
+    @apply text-orange no-underline hover:text-blueDark !important;
+  }
+}
+
+/* COLORS */
+.color-links {
+  @apply px-[20px] lg:p-0;
+
+  ul {
+    @apply grid grid-cols-2;
+  }
+}
+.color-link {
+  @apply flex items-center opacity-60 text-black hover:opacity-100;
+  &.active {
+    @apply opacity-100;
+  }
+}
+.color-swatch {
+  @apply border cursor-pointer h-[16px] mr-[8px] w-[16px] rounded-full;
+}
+
+.social-media-item {
+  @apply flex items-center justify-center cursor-pointer h-[40px] w-[40px];
+}
+
+.product-tag {
+  @apply bg-blueDark group-hover:bg-orange right-[10px] text-white top-[10px] opacity-100 px-[10px] py-[3px] rounded-[10px] transition-all pointer-events-none;
+}
+
+.shopify-section-group-header-group {
+  @apply z-[1000] !important;
+}

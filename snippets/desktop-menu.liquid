@@ -1,0 +1,79 @@
+<desktop-navigation>
+  {% assign menu_links_url = "" %}
+  {% for link in menu.links %}
+    {% assign menu_links_url = menu_links_url|append:link.url %}
+  {% endfor %}
+  <ul class="header__linklist list--unstyled {% unless bottom_navigation %}hidden-pocket hidden-lap{% endunless %}" role="list">
+    {%- for link in menu.links -%}
+      {%- assign link_title_downcase = link.title | strip | downcase -%}
+      {%- assign mega_menu_block = '' -%}
+
+      {%- for block in section.blocks -%}
+        {%- assign menu_item_downcase = block.settings.menu_item | strip | downcase -%}
+        {%- if menu_item_downcase == link_title_downcase -%}
+          {%- assign mega_menu_block = block -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+
+      <li class="header__linklist-item {% if link.links.size > 0 or mega_menu_block != '' %}has-dropdown{% endif %}" data-item-title="{{ link.title | escape }}">
+        {% assign sublink_urls = "" %}
+        {% for sublink in link.links %}
+          {% assign sublink_urls = sublink_urls|append:sublink.url %}
+        {% endfor %}
+
+        {% assign current_path_follow = false %}
+        {% if request.path == link.url %}{% assign current_path_follow = false %}
+          {% elsif request.path == "/" %}{% assign current_path_follow = true %}
+          {% elsif menu_links_url contains request.path %}{% assign current_path_follow = true %}
+          {% elsif link.url == request.path %}{% assign current_path_follow = true %}
+          {% elsif sublink_urls contains request.path %}{% assign current_path_follow = true %}
+        {% endif %}
+        {% for color_link in linklists.colors.links %}
+          {% if color_link.url == link.url %}
+            {% for color_sublink in color_link.links %}
+              {% if request.path == color_sublink.url %}
+                {% assign current_path_follow = true %}
+                {% assign is_variant_collection = true %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+
+        {% if current_path_follow == true %}
+          <a class="header__linklist-link link--animated" href="{{ link.url }}" {% if link.links.size > 0 or mega_menu_block != '' %}aria-controls="desktop-menu-{{ forloop.index }}" aria-expanded="false"{% endif %}>
+            {{- link.title -}}
+          </a>
+        {% else %}
+          <span onclick="push('{{ link.url | base64_encode }}')" class="cursor-pointer header__linklist-link link--animated" {% if link.links.size > 0 or mega_menu_block != '' %}aria-controls="desktop-menu-{{ forloop.index }}" aria-expanded="false"{% endif %}>
+            {{- link.title -}}
+          </span>
+        {% endif %}
+        {%- if link.links.size > 0 -%}
+          <ul hidden id="desktop-menu-{{ forloop.index }}" class="nav-dropdown {% if link.levels == 1 %}nav-dropdown--restrict{% endif %} list--unstyled" role="list">
+            {%- for sub_link in link.links -%}
+              <li class="nav-dropdown__item {% if sub_link.links.size > 0 %}has-dropdown{% endif %}">
+                {% assign follow_sublink = false %}
+                {% if request.path == "/" %}
+                  {% assign follow_sublink = true %}
+                  {% elsif is_variant_collection == true and current_path_follow == true %}{% assign follow_sublink = true %}
+                  {% elsif link.url == request.path %}{% assign follow_sublink = true %}
+                  {% elsif request.path != sub_link.url and sublink_urls contains request.path %}{% assign follow_sublink = true %}
+                {% endif %}
+                {% if follow_sublink == true %}
+                  <a href="{{ sub_link.url }}" class="cursor-pointer nav-dropdown__link link--faded">
+                    {{- sub_link.title -}}
+                  </a>
+                {% else %}
+                  <span onclick="push('{{ sub_link.url | base64_encode }}')" class="cursor-pointer nav-dropdown__link link--faded">
+                    {{- sub_link.title -}}
+                  </span>
+                {% endif %}
+              </li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+</desktop-navigation>

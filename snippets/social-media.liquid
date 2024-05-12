@@ -1,0 +1,29 @@
+{%- assign active_accounts = 0 -%}
+
+{%- capture social_media -%}
+  {%- if settings.social_facebook != blank -%}
+    {%- assign social_facebook = settings.social_facebook | replace_first: 'https://', '' | replace_first: 'http://', '' | prepend: 'https://' -%}
+
+    <li class="social-media__item social-media__item--facebook">
+      <span class="social-media-item" onclick="push('{{ social_facebook | base64_encode }}')">
+        {%- render 'icon' with 'facebook' -%}
+      </span>
+    </li>
+  {%- endif -%}
+
+  {%- if settings.social_instagram != blank -%}
+    {%- assign social_instagram = settings.social_instagram | replace_first: 'https://', '' | replace_first: 'http://', '' | prepend: 'https://' -%}
+
+    <li class="social-media__item social-media__item--instagram">
+      <span class="social-media-item" onclick="push('{{ social_instagram | base64_encode }}')">
+        {%- render 'icon' with 'instagram' -%}
+      </span>
+    </li>
+  {%- endif -%}
+{%- endcapture -%}
+
+{%- if social_media != blank -%}
+  <ul class="flex gap-[10px] {% if active_accounts > 3 %}social-media--no-radius{% endif %} list--unstyled" role="list">
+    {{ social_media }}
+  </ul>
+{%- endif -%}
