@@ -20,6 +20,7 @@
       "block_order": [
         "message-1"
       ],
+      "disabled": true,
       "settings": {
         "announcement_bar_position": "non_sticky",
         "announcement_text_size": "small",
@@ -35,7 +36,6 @@
       "type": "header",
       "settings": {
         "enable_sticky_header": true,
-        "logo": "shopify:\/\/shop_images\/logo-skullcap.svg",
         "logo_max_width": 50,
         "mobile_logo_max_width": 30,
         "navigation_menu": "main-menu",
@@ -47,7 +47,6 @@
         "show_country_selector": false,
         "enable_transparent_header": true,
         "transparent_header_text_color": "#ffffff",
-        "transparent_logo": "shopify:\/\/shop_images\/logo-skullcap-white.svg",
         "search_menu": ""
       }
     }
